@@ -12,32 +12,31 @@
     $( document ).ready(function() {
         $('#test').on('click', function() {
             let params ={};
-            params.id = $("#id").val();
-            params.pw = $("#pw").val();
+            params.id = $('#id').val();
+            params.pw = $('#pw').val();
             let val = validate( params );
             val ? alert('JqueryTEST완료') : console.log('test완료');
         });
     });
-    function validate(params) {
-
-        if(NullVal(params.id)){
-            alert('ID를 입력해주세요.');
-            return false;
-        } if(NullVal(params.pw)){
-            alert('PW를 입력해주세요.');
-            return false;
-        } if(params.id.length > 5 ){
-            alert('ID길이를 줄여주세요');
-            return false;
-        } if(params.pw.length > 5 ){
-            alert('PW길이를 줄여주세요');
-            return false;
-        }
-        return true;
-    };
+function validate(params) {
+    if(NullVal(params.id)){
+        alert('ID를 입력해주세요.');
+        return false;
+    } if(NullVal(params.pw)){
+        alert('PW를 입력해주세요.');
+        return false;
+    } if(params.id.length > 5 ){
+        alert('ID길이를 줄여주세요');
+        return false;
+    } if(params.pw.length > 5 ){
+        alert('PW길이를 줄여주세요');
+        return false;
+    }
+    return true;
+};
 
 function NullVal(param){
-    if ((null == param) || ('' == param) || ( param ===undefined) || ( param=== "undefined" ) ) {
+    if ((null == param) || ('' == param) || ( param === undefined) || ( param === "undefined" ) ) {
         return true;
     }
     return false;
@@ -49,6 +48,8 @@ function NullVal(param){
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="Ry/DataTables/datatables.min.css"/>
+    <script type="text/javascript" src="Ry/DataTables/datatables.min.js"></script>
 </head>
 <style>
     body{
@@ -70,6 +71,7 @@ function NullVal(param){
         </div>
     </form>
   <p>권석기 테스트 커밋테스트</p>
+  <p>권석기 업데이트 테스트</p>
 </div>
 <c:import url="jstlTest.jsp"/>
 </body>
