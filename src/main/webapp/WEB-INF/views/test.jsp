@@ -69,7 +69,7 @@ function NullVal(param){
             <button class="btn-primary" id="test" type="button">테스트용</button>
         </div>
     </form>
-  <p>권석기 테스트</p>
+  <p>권석기 테스트 커밋테스트</p>
 </div>
 <c:import url="jstlTest.jsp"/>
 </body>
