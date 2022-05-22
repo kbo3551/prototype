@@ -40,10 +40,10 @@ function NullVal(param){
 <head>
     <title>Title</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="Ry/DataTables/datatables.min.css"/>
-    <script type="text/javascript" src="Ry/DataTables/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/DataTables/datatables.min.css"/>
+
 </head>
 <style>
     body{

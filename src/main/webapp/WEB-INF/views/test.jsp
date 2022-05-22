@@ -2,12 +2,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
-  User: Ryeong
+  User: eong
   Date: 2022-04-29
   Time: 오전 2:06
   To change this template use File | Settings | File Templates.
 --%>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://code.jque.com/jque-3.4.1.js"></script>
 <script>
     $( document ).ready(function() {
         $('#test').on('click', function() {
@@ -15,7 +15,7 @@
             params.id = $('#id').val();
             params.pw = $('#pw').val();
             let val = validate( params );
-            val ? alert('JqueryTEST완료') : console.log('test완료');
+            val ? alert('JqueTEST완료') : console.log('test완료');
         });
     });
 function validate(params) {
@@ -46,10 +46,10 @@ function NullVal(param){
 <head>
     <title>Title</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="Ry/bootstrap/css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="Ry/DataTables/datatables.min.css"/>
-    <script type="text/javascript" src="Ry/DataTables/datatables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="/DataTables/datatables.min.css"/>
+    <script type="text/javascript" src="/DataTables/datatables.min.js"></script>
 </head>
 <style>
     body{
@@ -67,7 +67,7 @@ function NullVal(param){
             <input id="pw">
         </div>
         <div class="mb-3">
-            <button class="btn-primary" id="test" type="button">테스트용</button>
+            <button class="btn-prima" id="test" type="button">테스트용</button>
         </div>
     </form>
   <p>권석기 테스트 커밋테스트</p>
